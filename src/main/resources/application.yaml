@@ -1,3 +1,21 @@
 spring:
   application:
     name: prueba_microservicio
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/microservicio-prueba
+    username: postgres
+    password: 1995
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  devtools:
+    restart:
+      enabled: false
+
+server:
+  port: 8080
